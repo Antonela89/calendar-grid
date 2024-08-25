@@ -4,9 +4,9 @@
     padding: 0.25rem;
 }
 
-.taskCell:nth-child(8n) {
+/* .taskCell:nth-child(8n) {
     border-inline-end: 1px solid currentColor;
-}
+} */
 
 /* currentColor: hereda color del elemento mas cercano al que se le haya seteado un color (.calendar) */
 /* .taskCell:nth-child(8n): cada 8 elementos repite el estilo */
