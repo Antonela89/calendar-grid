@@ -18,5 +18,4 @@
 
 .grid .calendar {
     grid-area: calendar;
-    border: 10px solid green;
 }
