@@ -7,7 +7,10 @@
     inset-block-start: 0;
     padding-inline-end: 1rem;
     white-space: nowrap;
+    background-color: var(--white);
+    z-index: 2;
 }
+
 
 .timezoneCell::before {
     content: '';
