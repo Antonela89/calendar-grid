@@ -1,6 +1,7 @@
 @import './taskCell.css';
 @import './task.css';
 @import './calendarDay.css';
+@import './timezoneCell.css';
 
 .calendar {
     color: var(--gray20);
@@ -17,3 +18,18 @@
     grid-template-rows: 7rem repeat(24, minmax(var(--minBlockSize), var(--maxBlockSize)));
     min-block-size: 43.75rem;
 }
+
+/* .calendar-day {
+    estilos para calendario de cada dia... 24 rows (1 por cada hora) y 2 columns (timezone + día)
+} */
+
+
+/* .calendar-month {
+    estilos para calendario de cada mes... 4,5,6 rows (adaptebles segun cantidad de semanas) y 8 columns (timezone + 7 dias de la semana) 
+} */
+
+/* ¡Hola! En el calendario gregoriano, un mes puede tener entre 4 y 6 semanas.
+
+    Mínimo: 4 semanas. Esto ocurre en los meses con 28 días (febrero en años no bisiestos), que se dividen en exactamente 4 semanas.
+
+    Máximo: 6 semanas. Esto ocurre en los meses con 31 días, como enero, marzo, mayo, julio, agosto, octubre y diciembre. Estos meses tienen 4 semanas completas más 3 días adicionales, lo que en términos de semanas puede ocupar hasta 6 semanas. */
