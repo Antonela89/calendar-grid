@@ -12,9 +12,7 @@
     appearance: none;
     background-image: url(../assets/icons/chevron-down.svg);
     background-repeat: no-repeat;
-    background-position: right center;
-    background-position-x: right 0.5rem;
-    
+    background-position: right 0.5rem center;    
 }
 
 
