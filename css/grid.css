@@ -8,7 +8,6 @@
 
 .grid .header {
     grid-area: header;
-    border: 10px solid red;
 }
 
 .grid .sidebar {

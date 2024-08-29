@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1.5rem;
+}
+
+.header-primary,
+.header-secondary {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.header-logo {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
