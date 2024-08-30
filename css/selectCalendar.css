@@ -1,5 +1,5 @@
 .selectCalendar {
-    max-inline-size: 12.25rem;
+    inline-size: 12.25rem;
     color: var(--gray30);
 }
 
@@ -10,6 +10,7 @@
 }
 
 .listCalendar {
+    display: block;
     list-style: none;
     padding-inline-start:0.125rem; 
     margin: 0;
