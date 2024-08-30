@@ -1,0 +1,20 @@
+.search {
+    border-radius: 0.25rem;
+    color: var(--gray20);
+    border: none;
+    background: var(--gray10);
+    padding-block: 0.25rem;
+    padding-inline-start: 2.5rem;
+    
+    background-image: url('../assets/icons/users.svg');
+    background-repeat: no-repeat;
+    background-position: left 0.5rem center;
+
+    box-sizing: border-box;
+}
+
+
+.search:focus,
+.search:hover {
+    outline: none;
+}

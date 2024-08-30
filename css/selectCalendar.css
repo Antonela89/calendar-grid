@@ -1,0 +1,21 @@
+.selectCalendar {
+    max-inline-size: 12.25rem;
+    color: var(--gray30);
+}
+
+.titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listCalendar {
+    list-style: none;
+    padding-inline-start:0.125rem; 
+    margin: 0;
+    margin-block-start: 0.25rem;
+}
+
+.itemCalendar i {
+    color: var(--gray50);
+}

@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Fuente -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    
+
     <!-- Link CSS -->
     <link rel="stylesheet" href="./css/index.css">
-    
+
     <title>Calendar</title>
 </head>
+
 <body>
     <div class="grid">
         <header class="header">
@@ -26,7 +28,7 @@
                         <img src="./assets//images/logo.png" alt="Logo">
                     </a>
                 </div>
-    
+
                 <div class="calendarStatus">
                     <button class="button is-secondary">Hoy</button>
                     <span class="calendarStatus-navigation">
@@ -34,7 +36,7 @@
                             <i class="icon-chevronLeft" aria-hidden="true"></i>
                         </a>
                         <a href="#" class="button is-compact" aria-label="Siguiente semana">
-                            <i class="icon-chevronRight"  aria-hidden="true"></i>
+                            <i class="icon-chevronRight" aria-hidden="true"></i>
                         </a>
                     </span>
                     <time class="calendarStatus-date" datetime="08-08-2024">8 agosto 2024</time>
@@ -104,7 +106,7 @@
                     <div class="miniCalendar-monthDay">5</div>
                     <div class="miniCalendar-monthDay">6</div>
                     <div class="miniCalendar-monthDay">7</div>
-                    <div class="miniCalendar-monthDay">8</div>
+                    <div class="miniCalendar-monthDay is-selected">8</div>
                     <div class="miniCalendar-monthDay">9</div>
                     <div class="miniCalendar-monthDay">10</div>
                     <div class="miniCalendar-monthDay">11</div>
@@ -126,7 +128,7 @@
                     <div class="miniCalendar-monthDay">27</div>
                     <div class="miniCalendar-monthDay">28</div>
                     <div class="miniCalendar-monthDay">29</div>
-                    <div class="miniCalendar-monthDay is-selected">30</div>
+                    <div class="miniCalendar-monthDay">30</div>
                     <div class="miniCalendar-monthDay">31</div>
                     <div class="miniCalendar-monthDay is-inactive">1</div>
                     <div class="miniCalendar-monthDay is-inactive">2</div>
@@ -134,12 +136,40 @@
                     <div class="miniCalendar-monthDay is-inactive">4</div>
                 </div>
             </div>
+
+            <input class="search" type="search" placeholder="Buscar Personas">
+
+            <div class="selectCalendar">
+                <div class="titulo">
+                    Mis Calendarios
+                    <i class="icon-chevronUp"></i>
+                </div>
+                <ul class="listCalendar">
+                    <li class="itemCalendar">
+                        <i class="icon-checkSquare"></i>
+                        Leonidas Esteban
+                    </li>
+                    <li class="itemCalendar">
+                        <i class="icon-checkSquare"></i>
+                        Cumppleaños
+                    </li>
+                    <li class="itemCalendar">
+                        <i class="icon-checkSquare"></i>
+                        Tareas
+                    </li>
+                    <li class="itemCalendar">
+                        <i class="icon-check"></i>
+                        Recordatorios
+                    </li>
+                </ul>
+                </select>
+            </div>
         </div>
 
         <main class="calendar">
             <div class="currentTime"></div>
             <div class="calendar-week">
-               <div class="timezoneCell">GMT-3</div>
+                <div class="timezoneCell">GMT-3</div>
                 <h2 class="calendarDay">
                     <a href="./calendar-by-day.html" aria-labee="Domingo 04 de agosto">
                         <time datetime="2024-08-04">
@@ -421,4 +451,5 @@
         </main>
     </div>
 </body>
+
 </html>
