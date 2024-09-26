@@ -27,7 +27,7 @@
 
 .button.is-primary:hover,
 .button.is-primary:focus {
-    background: var(--blue30);   
+    background: var(--blue30);
 }
 
 .button:hover,
@@ -37,7 +37,7 @@
 .button.is-rounded:hover,
 .button.is-rounded:focus,
 .button.is-compact:hover,
-.button.is-compact:focus  {
+.button.is-compact:focus {
     background: var(--gray10);
 }
 
@@ -51,7 +51,7 @@
     vertical-align: middle;
 }
 
-.button.is-rounded  {
+.button.is-rounded {
     border-radius: 1.25rem;
     color: var(--blue10);
 }
@@ -62,7 +62,26 @@
 }
 
 .button.is-shadowed {
-    box-shadow: 1.07px 30.98px 92px rgba(0,0,0,0.0275), 0.41px 11.93px 29.3px rgba(0,0,0,0.0425), 0.09px 2.52px 7.5px rgba(0,0,0,0.07);
+    box-shadow: 1.07px 30.98px 92px rgba(0, 0, 0, 0.0275), 0.41px 11.93px 29.3px rgba(0, 0, 0, 0.0425), 0.09px 2.52px 7.5px rgba(0, 0, 0, 0.07);
 }
 
 
+@media screen and (prefers-color-scheme: dark) {
+    .button:hover,
+    .button:focus,
+    .button:hover i,
+    .buton:focus i,
+    .button.is-secondary:hover,
+    .button.is-secondary:focus,
+    .button.is-rounded:hover,
+    .button.is-rounded:focus,
+    .button.is-compact:hover,
+    .button.is-compact:focus {
+        color: var(--white);
+    }
+
+    .button.is-shadowed {
+        box-shadow: 1.07px 30.98px 92px rgba(112, 117, 122, 0.1), 0.41px 11.93px 29.3px rgba(112, 117, 122, 0.1), 0.09px 2.52px 7.5px rgba(112, 117, 122, 0.1);
+    }
+    
+}

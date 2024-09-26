@@ -23,4 +23,16 @@
 body {
     font: var(--body1-regular);
     margin: 0;
+    color: var(--gray50);
+    background: var(--white);
+}
+
+/* basa el color segun las prefeferencias del navegador del usuario*/
+@media screen and (prefers-color-scheme: dark) {
+    :root{
+        --gray50:#fffffe;
+        --gray30: #f1f3f4;
+        --gray20: #70757a;
+        --white: #222222;
+    }
 }

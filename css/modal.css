@@ -7,7 +7,7 @@
     border: none;
     border-radius: 0.25rem;
     box-shadow: 1.07px 30.98px 92px rgba(0,0,0,0.0275), 0.41px 11.93px 29.3px rgba(0,0,0,0.0425), 0.09px 2.52px 7.5px rgba(0,0,0,0.07);
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     gap: 1.5rem;
     position: absolute;
@@ -31,5 +31,9 @@
 .modal-actions {
     display: flex; 
     justify-content: end;
+}
+
+.modal[open] {
+    display: flex;
 }
 

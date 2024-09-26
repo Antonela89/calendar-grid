@@ -13,3 +13,9 @@
     margin: 0;
     white-space: nowrap;
 }
+
+@media screen and (prefers-color-scheme: dark) {
+    .task {
+        color: var(--gray50);
+    }
+}
