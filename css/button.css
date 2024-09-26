@@ -62,7 +62,7 @@
 }
 
 .button.is-shadowed {
-    box-shadow: 1.0719px 30.9815px 92px rgba(0,0,0,0.425185), 0.0873403px 2.52442px 7.4963px rgba(0,0,0,0.7) ;
+    box-shadow: 1.07px 30.98px 92px rgba(0,0,0,0.0275), 0.41px 11.93px 29.3px rgba(0,0,0,0.0425), 0.09px 2.52px 7.5px rgba(0,0,0,0.07);
 }
 
 
