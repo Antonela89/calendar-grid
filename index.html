@@ -462,60 +462,53 @@
 
         <dialog class="modal">
             <form class="modal-container">
-                <div class="input">
-                    <input name="title" type="text" placeholder="Agregar un título" required>
+                <div class="input is-outstanding">
+                    <div class="input-body">
+                        <input name="title" type="text" placeholder="Agregar un título" required>
+                    </div>
                 </div>
                 <div class="input">
-                    <input type="date" name="date" required>
+                    <i class="icon-clock"></i>
+                    <div class="input-body">
+                        <input type="date" name="date" required>
+                        <input type="time" name="timne-start" required>
+                        <input type="time" name="time-end" required>
+                    </div>
                 </div>
+           
+                
                 <div class="input">
-                    <input type="time" name="timne-start" required>
-                </div>
-                <div class="input">
-                    <input type="time" name="time-end" required>
+                    <i class="icon-users"></i>
+                    <div class="input-body">
+                        <input type="text" name="guests" list="guests" placeholder="Agregar Invitados" required>
+                        <datalist id="guests">
+                            <option value="Leonidas"></option>
+                            <option value="Carlos"></option>
+                            <option value="Miguel"></option>
+                            <option value="Sandra"></option>
+                            <option value="Cristopher"></option>
+                        </datalist>
+                    </div>
                 </div>
 
                 <div class="input">
-                    <input type="text" name="guests" list="guests" placeholder="Agregar Invitados" required>
-                    <datalist id="guests">
-                        <option value="Leonidas"></option>
-                        <option value="Carlos"></option>
-                        <option value="Miguel"></option>
-                        <option value="Sandra"></option>
-                        <option value="Cristopher"></option>
-                    </datalist>
-                </div>
-
-                <div class="input">
-                    <input type="text" name="location" placeholder="Agregar ubicación" >
+                    <i class="icon-gps"></i>
+                    <div class="input-body">
+                        <input type="text" name="location" placeholder="Agregar ubicación">
+                    </div>
                 </div>
                 <div class="input">
-                    <input type="file" name="file" multiple>
+                    <i class="icon-video"></i>
+                    <div class="input-body">
+                        <input type="file" name="file" multiple>
+                    </div>
                 </div>
                 <div class="input">
-                    <textarea name="description" cols="30" rows="10" placeholder="Agregar descripción"></textarea>
+                    <i class="icon-text"></i>
+                    <div class="input-body">
+                        <textarea name="description" cols="30" rows="2" placeholder="Agregar descripción"></textarea>
+                    </div>
                 </div>
-                <input type="submit" value="Enviar">
-
-
-
-                Design Meet
-                Jueves, 22 abril
-                2:00 pm
-                -
-                3:00 pm
-                Zona horaria - No se repite
-                Agregar invitados
-                Maria Dolores
-                Organizador
-                Ana zepeda
-                Invitado
-                Tadeo Lopez
-                Invitado
-                Agregar una videoconferencia de Google Meet
-                Agregar lugar
-                Agregar descripción o archivo adjuntos
-
             </form>
             <div class="modal-actions">
                 <button class="button">Cancelar</button>

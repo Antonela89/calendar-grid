@@ -23,7 +23,6 @@
 }
 
 .modal-container {
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
