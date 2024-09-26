@@ -462,6 +462,43 @@
 
         <dialog class="modal">
             <form class="modal-container">
+                <div class="input">
+                    <input name="title" type="text" placeholder="Agregar un título" required>
+                </div>
+                <div class="input">
+                    <input type="date" name="date" required>
+                </div>
+                <div class="input">
+                    <input type="time" name="timne-start" required>
+                </div>
+                <div class="input">
+                    <input type="time" name="time-end" required>
+                </div>
+
+                <div class="input">
+                    <input type="text" name="guests" list="guests" placeholder="Agregar Invitados" required>
+                    <datalist id="guests">
+                        <option value="Leonidas"></option>
+                        <option value="Carlos"></option>
+                        <option value="Miguel"></option>
+                        <option value="Sandra"></option>
+                        <option value="Cristopher"></option>
+                    </datalist>
+                </div>
+
+                <div class="input">
+                    <input type="text" name="location" placeholder="Agregar ubicación" >
+                </div>
+                <div class="input">
+                    <input type="file" name="file" multiple>
+                </div>
+                <div class="input">
+                    <textarea name="description" cols="30" rows="10" placeholder="Agregar descripción"></textarea>
+                </div>
+                <input type="submit" value="Enviar">
+
+
+
                 Design Meet
                 Jueves, 22 abril
                 2:00 pm
