@@ -67,6 +67,14 @@
 
 
 @media screen and (prefers-color-scheme: dark) {
+    .button.is-primary {
+        color: var(--gray50);
+    }
+
+    .button.is-shadowed {
+        box-shadow: 1.07px 30.98px 92px rgba(112, 117, 122, 0.1), 0.41px 11.93px 29.3px rgba(112, 117, 122, 0.1), 0.09px 2.52px 7.5px rgba(112, 117, 122, 0.1);
+    }
+
     .button:hover,
     .button:focus,
     .button:hover i,
@@ -77,11 +85,10 @@
     .button.is-rounded:focus,
     .button.is-compact:hover,
     .button.is-compact:focus {
+        background: var(--gray50);
         color: var(--white);
     }
 
-    .button.is-shadowed {
-        box-shadow: 1.07px 30.98px 92px rgba(112, 117, 122, 0.1), 0.41px 11.93px 29.3px rgba(112, 117, 122, 0.1), 0.09px 2.52px 7.5px rgba(112, 117, 122, 0.1);
-    }
+
     
 }
