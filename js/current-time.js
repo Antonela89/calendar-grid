@@ -7,7 +7,8 @@ function setCurrentTimePosition() {
   // console.log({ currentDay }, { currentHour })
   const $currentTime = document.querySelector('.currentTime')
 
-  const $calendar = document.querySelector('.calendar-week')
+  const $calendar = document.querySelector('.calendar-week') || document.querySelector('.calendar-day')
+  // console.log({$calendar})
   let calendarBlockSize = $calendar.clientHeight
   let calendarInlineSize = $calendar.clientWidth
 
@@ -17,18 +18,26 @@ function setCurrentTimePosition() {
   const cellInlineSize = calendarInlineSize / 7
 
 
-  // console.log({ calendarBlockSize }, { calendarInlineSize })
+  console.log({ calendarBlockSize }, { calendarInlineSize })
   const calendarDayBlockSize = document.querySelector('.calendarDay').clientHeight
   calendarBlockSize = calendarBlockSize - calendarDayBlockSize
   // console.log({ calendarBlockSize })
   const cellBlockSize = calendarBlockSize / 24
   // console.log({ cellBlockSize }, { cellInlineSize })
 
-  $currentTime.style.top = `${cellBlockSize * (currentHour) + calendarDayBlockSize + (cellBlockSize / 60) * currentMin}px`
-  $currentTime.style.left = `${cellInlineSize * (currentDay) + calendarTimezoneCellInlineSize + 24}px`
+  if (($calendar.classList.contains("calendar-week"))) { 
+    $currentTime.style.top = `${cellBlockSize * (currentHour) + calendarDayBlockSize + (cellBlockSize / 60) * currentMin}px`
+    $currentTime.style.left = `${cellInlineSize * (currentDay) + calendarTimezoneCellInlineSize + 24}px`
+    $currentTime.style.inlineSize = `${cellInlineSize}px`
+  } else {
+     $currentTime.style.top = `${cellBlockSize * (currentHour) + calendarDayBlockSize + (cellBlockSize / 60) * currentMin}px`
+    $currentTime.style.left = `${calendarTimezoneCellInlineSize + 24}px`
+     $currentTime.style.inlineSize = `${calendarInlineSize}px`
+  }
 }
 
 window.intervalCurrentTimePosition = null
+
 
 
 function intervalCurrentTimePosition(interval = 1000) {
